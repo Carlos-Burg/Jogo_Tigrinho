@@ -35,7 +35,7 @@ def rodada(saldo): #f
     print("+===============+")
     input("\nDigite enter para rodar: ") 
 
-    tentativa = [random.choice(cartas) for i in range(3)] #seleciona 3 simblos aleatórios e insere em tentativa
+    #seleciona 3 simblos aleatórios e insere em tentativa
 
     # Define chance de vitória
     chance_vitoria = 0.2  # 20% padrão

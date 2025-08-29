@@ -34,7 +34,7 @@ def rodada(saldo): #f
     print(f"|SALDO: R${saldo:.2f}  |")
     print("+===============+")
     input("\nDigite enter para rodar: ") 
-    
+
     # Define chance de vitória
     chance_vitoria = 0.2  # 20% padrão
     if saldo < 10:

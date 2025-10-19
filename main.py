@@ -36,9 +36,9 @@ def rodada(saldo): #f
     input("\nDigite enter para rodar: ") 
     
     # Define chance de vitória
-    chance_vitoria = 0.2  # 20% padrão
+    chance_vitoria = 0.5  # 20% padrão
     if saldo < 10:
-        chance_vitoria = 0.3  # 30% se saldo baixo
+        chance_vitoria = 0.6  # 30% se saldo baixo
 
     # Sorteio com chance de vitória
     if random.random() < chance_vitoria:
@@ -94,6 +94,9 @@ while True: #verifica se o usuário deseja jogar novamente ou sair
         break
 
     jogar_novamente = input("\nJogar novamente (s/n): ").lower()
+    if jogar_novamente != "s" and jogar_novamente != "n":
+        print("\nOpção inválida! Digite 's' para sim ou 'n' para não.")
+        jogar_novamente = input("Jogar novamente (s/n): ").lower()
 
     if jogar_novamente == "n":
         limpa_tela()
